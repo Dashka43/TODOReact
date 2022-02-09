@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Title</title>
+</head>
+<body>
+    <div class = 'wrapper'>
+        <form action="" id="add_task">
+        <label for="text">Напиши задание</label>
+        <div>
+            <input name="text"  id="text" />
+
+            <select id = "priority"  name="priority">
+                <option value="red" selected>Высокий</option>
+                <option value="yellow">Средний</option>
+                <option value="green">Низкий</option>
+            </select>
+        </div>
+        <button>Создать задание</button>
+        </form>
+
+    </div>
+
+    <div class = 'wrapper'>
+        <button id = 'archive'>Покажи архив</button>
+        <h2 id = 'h2'>
+            Список заданий
+        </h2>
+        <div>
+            <select id="select_filter"  name="filter" class="js-filter">
+                <option value="" selected>Все</option>
+                <option value="1">Завершенные</option>
+                <option value="0">Незавершенные</option>
+            </select>
+            <select id = "favorite_filter"  name="favFilter">
+                <option value="" selected>Все</option>
+                <option value="1">Избраные</option>
+                <option value="0">Неизбраные</option>
+            </select>
+            <select id = "priority_filter"  name="priFilter" class="js-filter">
+                <option value="" selected>Все</option>
+                <option value="1">Високий</option>
+                <option value="2">Средний</option>
+                <option value="3">Низкий</option>
+            </select>
+            <input  id="search" />
+        </div>
+        <ul id="taskList"></ul>
+    </div>
+
+    <script src="./index.js"></script>
+
+</body>
+</html>
