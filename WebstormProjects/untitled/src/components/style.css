@@ -1,0 +1,27 @@
+.completed, .title {
+    color:teal;
+}
+
+form, .postList {
+    margin:20px;
+}
+.postList{
+    border:solid teal;
+    padding: 30px;
+}
+.title{
+    text-align: center;
+}
+.post,form{
+    border-bottom:solid teal;
+}
+.buttons {
+    padding-bottom:20px;
+    padding-right: 20px;
+}
+.text{
+    position:relative;
+}
+.buttonwrapper{
+    margin-left: 90%;
+}
